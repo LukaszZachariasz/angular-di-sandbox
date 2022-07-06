@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {WelcomeService} from './shared/welcome.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  template: undefined
 })
 export class AppComponent {
-
   constructor(private welcomeService: WelcomeService) {
-    welcomeService.sayHello();
+    this.welcomeFromService();
+  }
+
+  public welcomeFromService(): void {
+    this.welcomeService.sayHello();
   }
 }
