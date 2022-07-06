@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class WelcomeService {
-  sayHello() {
-    alert('Hello Angular!');
+  sayHello(who: string) {
+    alert('Hello Angular! I am: ' + who);
   }
 }
