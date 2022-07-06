@@ -3,7 +3,10 @@ import {WelcomeService} from './shared/welcome.service';
 
 @Component({
   selector: 'app-root',
-  template: undefined
+  template: '',
+  providers: [
+    WelcomeService
+  ]
 })
 export class AppComponent {
   constructor(private welcomeService: WelcomeService) {
