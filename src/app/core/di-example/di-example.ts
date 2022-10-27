@@ -46,7 +46,7 @@ class Injector {
 
 const mockModule = {
   providers: [
-
+    WheelService
   ]
 }
 

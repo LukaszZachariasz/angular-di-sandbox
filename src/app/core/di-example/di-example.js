@@ -51,7 +51,9 @@ var Injector = /** @class */ (function () {
 }());
 // If angular starts...
 var mockModule = {
-    providers: []
+    providers: [
+        WheelService
+    ]
 };
 // Running: tsc di-example.ts && node di-example.js
 // 1. create instance of Injector
